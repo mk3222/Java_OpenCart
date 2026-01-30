@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/adminp1/IdeaProjects/OpenCart">
+        <classes>
+            <class name="com.testcases.Login">
+                <methods>
+                    <include name="verifyLoginWithValidCredentials"/>
+                    <include name="verifyLoginWithInvalidCredentials"/>
+                    <include name="verifyLoginWithValidEmailAndInvalidPasswordCredentials"/>
+                    <include name="verifyLoginWithInvalidEmailAndValidPasswordCredentials"/>
+                    <include name="verifyLoginWithoutCredentials"/>
+                </methods>
+            </class>
+            <class name="com.testcases.Register">
+                <methods>
+                    <include name="verifyRegisteringAnAccountWithMandatoryFields"/>
+                    <include name="verifyRegisteringAnAccountWithExistingEmailAddress"/>
+                    <include name="verifyRegisteringAnAccountWithoutFillingAnyDetails"/>
+                </methods>
+            </class>
+            <class name="com.testcases.Search">
+                <methods>
+                    <include name="verifySearchWithValidProduct"/>
+                    <include name="verifySearchWithInvalidProduct"/>
+                    <include name="verifySearchWithoutAnyProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
