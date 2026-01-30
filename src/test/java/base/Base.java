@@ -60,7 +60,6 @@ public class Base {
         }
     }
 
-    //*****?//
 
     public WebDriver initializeBrowserAndOpenApplicationURL(String browserName) {
 
